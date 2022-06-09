@@ -13,5 +13,11 @@ pipeline {
                 sh 'java Hello'
             }
         }
+        stage('test') {
+            steps {
+                echo 'Running the compiled java code!!!'
+                sh 'java Hello'
+            }
+        }
     }
 }
