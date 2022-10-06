@@ -19,5 +19,11 @@ pipeline {
                 sh 'echo stage3'
             }
         }
+        stage('deploy') {
+            steps {
+                echo 'Hello world!!!'
+                sh 'echo stage4'
+            }
+        }
     }
 }
