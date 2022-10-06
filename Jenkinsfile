@@ -8,5 +8,10 @@ pipeline {
                 sh 'python pipeline.py'
             }
         }
+        stage('run') {
+            steps {
+                echo 'Hello world!!!'
+            }
+        }
     }
 }
