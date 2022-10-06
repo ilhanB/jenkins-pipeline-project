@@ -13,5 +13,11 @@ pipeline {
                 echo 'Hello world!!!'
             }
         }
+        stage('run') {
+            steps {
+                echo 'Hello world!!!'
+                sh 'echo stage3'
+            }
+        }
     }
 }
