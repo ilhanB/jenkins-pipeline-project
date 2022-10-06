@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('run') {
+        stage('build') {
             steps {
                 echo 'Clarusway_Way to Reinvent Yourself'
                 sh 'python --version'
@@ -13,7 +13,7 @@ pipeline {
                 echo 'Hello world!!!'
             }
         }
-        stage('run') {
+        stage('test') {
             steps {
                 echo 'Hello world!!!'
                 sh 'echo stage3'
