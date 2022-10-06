@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'ecs'
-    }
+    agent any
     stages {
         stage('build') {
             steps {
@@ -17,7 +15,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                echo 'Running the compiled java code!!!'
+                echo 'Running the compiled java new code!!!'
                 sh 'java Hello'
             }
         }
